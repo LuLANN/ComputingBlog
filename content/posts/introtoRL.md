@@ -1,4 +1,4 @@
-title: brief Intro to the AI behind Self Driving Cars
+title: Brief Intro to the AI behind Self Driving Cars
 subtitle: How can cars navigate themselves in a complex environment?
 date: 2018-11-15
 author: Lucy An
@@ -10,7 +10,7 @@ how self driving cars work and how they can be implemented ...
 ----
 Reinforcement learning is the process of the computer teaching _itself_ to complete a certain task.
 Unlike other neural networks, this is based **entirely** on rewards.
-to further understand this concept, you need to understand that there are two main objects in reinforcement learning:
+To further understand this concept, you need to understand that there are two main objects in reinforcement learning:
 
 * The Environment
 * The Agent
