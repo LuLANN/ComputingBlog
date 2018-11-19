@@ -1,4 +1,4 @@
-title: Brief Intro to the AI behind Self Driving Cars
+title: brief Intro to the AI behind Self Driving Cars
 subtitle: How can cars navigate themselves in a complex environment?
 date: 2018-11-15
 author: Lucy An
