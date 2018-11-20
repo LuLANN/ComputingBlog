@@ -6,17 +6,17 @@ image: post-bg.jpg
 
 ### Setting up your environment
 ----
-Does not mean close all windows and wear a black hoodie. We are talking about
-your computer environment.
-Check out this [link](http://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/) to set up all the tools you will need for this tutorial (If you are using Windows)
 
-Now that your environment is set up. We can begin to write code.
+If you are running Windows, go to [link](http://timmyreilly.azurewebsites.net/python-flask-windows-development-environment-setup/) to set up all the tools you will need for this tutorial. 
+
+Now that your environment is set up. We can begin to write the code.
 
 ### Getting Started
 ----
 
-First, you must create a directory that will contain all of your files for the website. This ensures that your other files will not interfere.
-Inside your directory, you will need to create another one named `templates`, which contains all of your html
+1. First, create a directory that will contain all of your files for the website. This ensures that the other files on your computer will not interfere. 
+
+2. Inside your directory, you will need to create another directory titled `templates`, which will contain all of your html       code.
 
 An example of an index html can look like this:
 
@@ -44,8 +44,9 @@ An example of an index html can look like this:
 ### Writing the Driver Code
 ----
 
-The `{%  %}` indicates that there are parameters passed in there. This is a simple template for our navigating system where the middle section will be replaced with different html blocks depending on the URL that the user chose.
-An example of how to tell the html that you are continuing from the index html is the following:
+The `{%  %}` characters indicates that there are parameters being passed in to the function. This is a simple template for our navigating system where the middle block will be replaced with different html blocks depending on the URL that the user chose.
+
+To instruct the html that you are continuing from the index html, add the following block:
 
     {% extends "index.html" %}
     {% block content %}
@@ -55,9 +56,15 @@ An example of how to tell the html that you are continuing from the index html i
       </div>
     {% endblock %}
 
-the `{% extends %}` basically tells it to pass into the index html, and the ``{% block content %}`` and the `{% endblock %}` indicates the part that will be passed on.
-After creating all the html for you website, you must be wondering "How do I get it working?". This is where flask comes in. Outside of the template directory, create a python file that will create the website for you. In this case, I will call it `app.py`.
-A simple website can have it look something like this:
+The `{% extends %}` characteers basically tells the compiler to pass into the index html, and the ``{% block content %}`` and the `{% endblock %}` indicates the part that will be passed on.
+
+### Using Flask
+
+Now that all of the the basic html for the website is set up, you can begin to start implementing Flask. 
+
+Outside of the template directory, create a python file that will create the website for you. In this case, I will call it `app.py`.
+
+A simple website can have a python file look something like this:
 
     from flask import Flask, render_template
     app = Flask(__name__)
@@ -67,5 +74,6 @@ A simple website can have it look something like this:
     if __name__ = '__main__':
         app.run(debug=True)
 
-It is very important that you _do not_ import **everything** from flask, as it is a very big library. The third line tells Flask where to look for templates, static files, and so on. The `@app.route` is a decorator, which allows you to actually implement the html.
+It is very important that you _do not_ import **everything** from flask, as it is a very big library. The third line tells Flask where to look for templates, static files, and so on. The `@app.route` is a decorator, which allows you to implement the html.
+
 You can do a lot of neat things with html, flask and css. This is only the tip of the iceberg.
