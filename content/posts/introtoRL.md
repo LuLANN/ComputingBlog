@@ -34,7 +34,7 @@ This "agent" does **not** refer to the secret agents that you see in action movi
 
 In our driverless car simulation, the car needs to first **crash** multiple times to learn to drive on the road. The car receives more points the longer it stays "alive". and with enough trials, the AI will be so good that it will never crash in the **same** environment.
 
-How quickly an AI is able to successfully complete a task is dependant on its features. Insufficient features will cause the AI to be lacking of crucial information for success , while **an excessive amount** will cause the rate of progression to be extremely slow since the AI will be unsure of what data to use or ignore. For example, in order to navigate a car through a series of roads, the AI must gather information such as the displacement between its initial position and that of the nearest turn. If not, the car will surely crash. Furthermore, if the car had an abundance of data it would take extra time to sort out the necesary from the unnecessary.
+How quickly an AI is able to successfully complete a task is dependant on its features. Insufficient features will cause the AI to be lacking of crucial information for success , while **an excessive amount** will cause the rate of progression to be extremely slow since the AI will be unsure of what data to use or ignore. For example, in order to navigate a car through a series of roads, the AI must gather information such as the displacement between its initial position and that of the nearest turn. If not, the car will surely crash. Furthermore, if the car had an abundance of data it would need to sort out the necesary from the unnecessary.
 
 ### Distinct Characteristics of Reinforcement Learning 
 ----
